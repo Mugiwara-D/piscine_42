@@ -1,2 +1,1 @@
-
-find . -exec git check-ignore {} + | xargs -I{} basename {}
+git ls-files --exclude-standard --others --ignored
