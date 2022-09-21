@@ -36,7 +36,7 @@ int	check_base(char *str)
 		return (0);
 	while (str[i] != '\0')
 	{
-		if (str[i] == 127 || str[i] == 43 || str[i] == 45)
+		if (str[i] == 127 || str[i] == 43 || str[i] == 45 || str[i] < 32)
 			return (0);
 		j = i + 1;
 		while (j < ft_baselen(str))
